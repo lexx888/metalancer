@@ -1,0 +1,40 @@
+{ "pools": [
+                {
+                           "id": "0xB994a8A7242e48D15f47E22e98e8BAEbE09B0548",
+                           "publicSwap": "true",
+                           "swapFee": "0.003",
+                           "tokens": [
+                               {
+                                   "address": "0x1A30eE1295e0f10d3D9bDDc763510b3baFD1be98",
+                                   "balance": "500",
+                                   "decimals": "8",
+                                   "denormWeight": "5",
+                                   "id": "0xB994a8A7242e48D15f47E22e98e8BAEbE09B0548-0x1A30eE1295e0f10d3D9bDDc763510b3baFD1be98",
+                                   "symbol": "TOK1"
+                               },
+                               {
+                                   "address": "0x6925EA17e5BcCb23CB271530cad999B992D50799",
+                                   "balance": "600",
+                                   "decimals": "18",
+                                   "denormWeight": "5",
+                                   "id": "0xB994a8A7242e48D15f47E22e98e8BAEbE09B0548-0x6925EA17e5BcCb23CB271530cad999B992D50799",
+                                   "symbol": "TOK2"
+                               },
+                               {
+                                   "address": "0x00B205bB15729dc21BBEf9b422498cFebE4CC4F0",
+                                   "balance": "700",
+                                   "decimals": "18",
+                                   "denormWeight": "5",
+                                   "id": "0xB994a8A7242e48D15f47E22e98e8BAEbE09B0548-0x00B205bB15729dc21BBEf9b422498cFebE4CC4F0",
+                                   "symbol": "TOK3"
+                               }
+                           ],
+                           "tokensList": [
+                               "0x1A30eE1295e0f10d3D9bDDc763510b3baFD1be98",
+                               "0x6925EA17e5BcCb23CB271530cad999B992D50799",
+                               "0x00B205bB15729dc21BBEf9b422498cFebE4CC4F0"
+                           ],
+                           "totalWeight": "15"
+                       }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "balancer-assets",
+  "version": "1.0.0-1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "generate": "npm run generate:registry && npm run generate:tokenlist && npm run generate:bal-for-gas",
+    "generate:registry": "node scripts/generate-registry.js",
+    "generate:tokenlist": "node scripts/generate-tokenlist.js",
+    "generate:bal-for-gas": "node scripts/generate-bal-for-gas.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "publishConfig": {
+      "registry": "https://registry.npmjs.org/",
+      "access": "public"
+  },
+  "devDependencies": {
+    "axios": "^0.20.0",
+    "ethers": "^5.0.9"
+  }
+}

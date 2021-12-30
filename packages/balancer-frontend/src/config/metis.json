@@ -1,0 +1,39 @@
+{
+    "network": 588,
+    "chainId": 588,
+    "precision": 6,
+    "infuraKey": "n/a",
+    "alchemyKey": "n/a",
+    "subgraphUrl": "/src/assets/pools.json",
+    "subgraphBackupUrl": "/src/assets/pools.json",
+    "addresses": {
+      "bFactory": "0xe74C0Ae9f38b2dE34ec78FbF83Af68125A456998",
+      "bActions": "0xe74C0Ae9f38b2dE34ec78FbF83Af68125A456998",
+      "dsProxyRegistry": "0xC125B4a359e03683B26f67b7cc421518E5b47F82",
+      "exchangeProxy": "0x8DcCa026Ca829D479E004b61f6d94451ca90f2Fc",
+      "weth": "0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000",
+      "multicall": "0xd8F763e9778CDcEaD5c7A795120ED6f8B7af537d"
+    },
+    "connectors": {
+      "injected": {},
+      "walletconnect": {
+        "rpc": {
+          "1": "n/a"
+        }
+      },
+      "portis": {
+        "network": "n/a",
+        "dappId": "n/a"
+      },
+      "walletlink": {
+        "appName": "Balancer Exchange",
+        "darkMode": true,
+        "chainId": 1,
+        "ethJsonrpcUrl": "n/a"
+      },
+      "fortmatic": {
+        "apiKey": "n/a"
+      }
+    }
+  }
+  
