@@ -71,6 +71,7 @@ metis_stardust: {
 We have created a single deployment and configuration script that will peform all necessary steps to launch Balancer's contracts. All you need is to run:
 
 ```shell
+yarn install
 yarn hardhat run scripts/deploy.js --network metis_stardust
 ```
 
