@@ -111,7 +111,7 @@ Finalized: true
 
 The front-end (off-chain) code is located in the `packages` directory.
 
-Balancer's frontend code relies heavily on hardcoded contract addresses. To make it work properly, you need to replace these them with the addresses provied by the deployment script (see the output above). While tedious, it is pretty straighforward if you know where to look. The full list of files containing hardcoded facotory, pool and token addresses that has to be modified:
+Unfortunately, Balancer's frontend code relies heavily on hardcoded contract addresses in several places. In the future, we plan to refactor the code to make it much more configurable, but for now to make it work properly, you need to replace these addresses them with the addresses provied by the deployment script (see the output above). While tedious, it is pretty straighforward task if you know where to look. The full list of files containing hardcoded facotory, pool and token addresses that has to be modified:
 
 ```
 packages/balancer-frontend/src/config/metis.json
@@ -125,6 +125,7 @@ packages/ethcall/src/provider.ts
 packages/balancer-frontend/node_modules/balancer-assets/scripts/generate-registry.js
 packages/balancer-frontend/src/utils/provider.ts
 ```
+
 
 
 To build front-end run:
