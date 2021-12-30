@@ -55,6 +55,19 @@ For the roadmap, please consult `Metalancer DAC Lightpaper` uploaded with the su
 ```shell
 cd metalancer/contracts-hardhat
 ```
+Open `hardhat.config.js` and find the Stardust network config:
+
+```js
+      metis_stardust: {
+        url: "https://stardust.metis.io/?owner=588",
+        accounts: [
+          'ADMIN_PRIVATE_KEY',
+          'USER_PRIVATE_KEY',
+        ]      
+      }
+
+```
+
 
 ### Build 
 
