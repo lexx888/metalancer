@@ -108,7 +108,7 @@ Finalized: true
 
 
 ## Configuring, building and runing the front-end
-### Configuring
+### Configure
 
 The front-end (off-chain) code is located in the `packages` directory.
 
@@ -127,7 +127,7 @@ packages/balancer-frontend/node_modules/balancer-assets/scripts/generate-registr
 packages/balancer-frontend/src/utils/provider.ts
 ```
 
-### Building
+### Build
 
 After you change the addresses, to build the front-end run:
 
@@ -144,6 +144,10 @@ To launch Metalancer dapp, execute:
 cd packages/balancer-frontend
 npm run serve
 ```
+and navigate to http://127.0.0.1:8080/
+
 ## Online demo
 
-TBA
+You can checkout our the online demo: TBA
+
+The private keys for the accounts with test tokens will be avaiable in the description of video submission.
