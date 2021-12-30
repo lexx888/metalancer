@@ -145,7 +145,7 @@ To launch Metalancer dapp, execute:
 cd packages/balancer-frontend
 npm run serve
 ```
-and navigate to http://127.0.0.1:8080/
+Then navigate to http://127.0.0.1:8080/ and connect with the Metamask browser extention.
 
 ## Online demo
 
