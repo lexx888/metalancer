@@ -32,7 +32,7 @@ We have
 * built a monorepo for the Balancer's front-end dapp and all its packages. Orignial Balancer dapp imports most of the packages as node modules, making it hard to build on top of the Balancer's code base. Metalancer allows Metis builders' community to easily modify Balancer's front-end and Smart Order Routing source code, with instant rebuild/reload tooling enabled.
 * gathered all the necessary contracts in one a single repo (mutlicall, router, pool registry contracts). Previously, they were scattered around several different GitHub repos with no clear links between them, i.e. it was unclear what contracts are required, what versions were compatible, etc. Now everything is in complete synch and is deployment-ready.
 * migrated Balancer's Solidity build from Truffle to Hardhat. Hardhat is a feature rich, fast and highly configurable Solidity development environment.
-* added deployment and configuration scripts for a turn-key launch of the Balancer on Metis, including detailed tutorial on launching Balancer on Stardust testnet and configuring its front-end. Previsously, there were only unit tests available as a source of information on how to configure Balancer's contracts. No tutorial was available for the Smart Order routing and Front-end dApp configuration.
+* added deployment and configuration scripts for a turn-key launch of the Balancer on Metis, including detailed tutorial on launching Balancer on Stardust testnet and configuring its front-end. Previsously, there were only unit tests available as a source of information on how to configure Balancer's contracts. No tutorial was available for the Smart Order routing and Front-end dApp configuration. 
 * revamped balance retrival mechanism that relied on a custom multicall with no source code available. Balancer uses a custom multicall contract, which is not in Balancer's Github repo. This was a major show stopper for deployment of Balancer to Metis. Our fork does not require this contract anymore.
 * added a `Staking` contract for a fixed-term (4 weeks) liquidity farming. It should incentives investors to provide liquidity for a longer period and pursue more long-term investment, while increasing Metis TVL and Metalancer's liquidity. 
 * created a mockup for a new portfolio investment UI, making it more newbie friendly and focused on strategic portfolio investment
@@ -107,7 +107,25 @@ Finalized: true
 
 
 
-### Build 
+## Configuring, building and runing the front-end
+
+The front-end (off-chain) code is located in the `packages` directory.
+
+Balancer's frontend code relies heavily on hardcoded contract addresses. To make it work properly, you need to replace these them with the addresses provied by the deployment script (see the output above). While tedious, it is pretty straighforward if you know where to look. The full list of files containing hardcoded facotory, pool and token addresses that has to be modified:
+
+```
+packages/balancer-frontend/src/config/metis.json
+packages/balancer-frontend/src/assets/pools.json
+packages/balancer-frontend/src/api/ethereum.ts
+packages/balancer-frontend/src/utils/storage.ts
+packages/balancer-frontend/.env
+packages/balancer-assets/lists/eligible.json
+packages/balancer-assets/lists/listed.json
+packages/ethcall/src/provider.ts
+packages/balancer-frontend/node_modules/balancer-assets/scripts/generate-registry.js
+packages/balancer-frontend/src/utils/provider.ts
+```
+
 
 To build front-end run:
 
