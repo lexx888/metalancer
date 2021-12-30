@@ -12,7 +12,7 @@
 
 The project name emphasizes the synergy we see between scalablility of Metis and flexibility of Balancer: 
 
-**Met**is + B**alancer** = Met-alancer (+ a pinch of _meta_ hype)
+**Met**is + B**alancer** = ❤️Met-alancer (+ a pinch of _meta_ hype)
 
 ### Vision and Motivation
 
