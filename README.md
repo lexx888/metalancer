@@ -10,7 +10,9 @@
 ### Enter Metalancer
 **Metalancer** introduces battle-proven Balancer Bronze realease to the Metis ecosystem. Our ultimate goal is to **is to build state-of-the-art portfolio investment protocol for Metis on top of the secure, audited and well-tested Balancer's codebase**. 
 
-Metalancer = __Met__is + B__alancer__ (+ a pinch of __meta__ hype)
+The project name emphasizes the synergy we see between scalablility of Metis and flexibility of Balancer: 
+
+**Met**is + B**alancer** = Met-alancer (+ a pinch of _meta_ hype)
 
 ### Vision and Motivation
 
