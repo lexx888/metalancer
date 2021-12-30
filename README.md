@@ -50,10 +50,11 @@ For the roadmap, please consult `Metalancer DAC Lightpaper` uploaded with the su
 
 # Configuring and running on Stardust Testnet
 
+## Compiling and deploying contracts
 
-## Running a local testnet
-
-TBD
+```shell
+cd metalancer/contracts-hardhat
+```
 
 ### Build 
 
