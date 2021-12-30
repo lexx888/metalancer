@@ -3,12 +3,13 @@
 ![image](https://user-images.githubusercontent.com/80399594/147783504-f4d4366e-8f24-41d5-9f42-5f5b5947d97c.png)
 
 ## Metalancer = Metis + Balancer + a pinch of meta hype
-
+### Introduction
 **Metis** is an easy-to-use, highly scalable, low-cost, and fully functional Ethereum Layer 2 framework.
 
 **Balancer** is an automated, on-chain portfolio manager and liquidity provider. Balancer is based on an N-dimensional invariant surface which is a generalization of the constant product formula described by Vitalik Buterin.
 
-This project introduces battle-proven Balancer Bronze realease to the Metis ecosystem. Our ultimate goal is to **is to build state-of-the-art DEX on top of the secure, audited and well-tested Balancer's codebase**. 
+### Enter Metalancer
+Metalancer introduces battle-proven Balancer Bronze realease to the Metis ecosystem. Our ultimate goal is to **is to build state-of-the-art portfolio investment and DEX on top of the secure, audited and well-tested Balancer's codebase**. 
 
 ## Summary of main contributions
 
