@@ -55,18 +55,23 @@ For the roadmap, please consult `Metalancer DAC Lightpaper` uploaded with the su
 ```shell
 cd metalancer/contracts-hardhat
 ```
-Open `hardhat.config.js` and find the Stardust network config:
+Open `hardhat.config.js`, find the Stardust network config and set the the private keys for the pool's admin and one of the user:
 
 ```js
-      metis_stardust: {
-        url: "https://stardust.metis.io/?owner=588",
-        accounts: [
-          'ADMIN_PRIVATE_KEY',
-          'USER_PRIVATE_KEY',
-        ]      
-      }
-
+metis_stardust: {
+    url: "https://stardust.metis.io/?owner=588",
+    accounts: [
+        'ADMIN_PRIVATE_KEY',
+        'USER_PRIVATE_KEY',
+    ]      
+}
 ```
+We have created a single deployment and configuration script that will peform all necessary steps to launch Balancer's contracts. All you need is to run:
+
+```shell
+yarn hardhat run scripts/deploy.js --network metis_stardust
+```
+
 
 
 ### Build 
