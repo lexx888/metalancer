@@ -86,19 +86,6 @@ contract Staking is Ownable {
     
     
     /**
-     * demo version
-    */
-    // function distribute(uint _reward,address _tokenAddr) isValidToken(_tokenAddr) external returns (bool){
-    //     require(tokenTotalStaked[_tokenAddr] != 0);
-    //     uint reward = _reward.mul(BIGNUMBER); //simulate floating point operations
-    //     uint rewardAddedPerToken = reward/tokenTotalStaked[_tokenAddr];
-    //     tokenCummRewardPerStake[_tokenAddr] = tokenCummRewardPerStake[_tokenAddr].add(rewardAddedPerToken);
-    //     return true;
-    // }
-    
-    
-    
-    
     // /**
     // * production version
     // * @dev pay out dividends to stakers, update how much per token each staker can claim

@@ -6,44 +6,6 @@ const hre = require("hardhat");
 // --------------------------------------------------
 
 
-// packages/balancer-frontend/src/config/metis.json
-// packages/balancer-frontend/src/assets/pools.json
-// packages/balancer-frontend/src/api/ethereum.ts
-// packages/balancer-frontend/src/utils/storage.ts
-// packages/balancer-frontend/.env
-// packages/balancer-assets/lists/eligible.json
-// packages/balancer-assets/lists/listed.json
-// packages/ethcall/src/provider.ts
-// packages/balancer-frontend/node_modules/balancer-assets/scripts/generate-registry.js
-// packages/balancer-frontend/src/utils/provider.ts
-
-
-// Deployer account: 0xAa0FE1e5500b20615e51deB3b8E41E4c90e2AcDC
-// User account: 0xF792cBc00Ee0e961017f634A3B3CD58e17019F86
-// Deployer balance before deployment: 1499563380000000000
-// BFactory deployed to: 0xe74C0Ae9f38b2dE34ec78FbF83Af68125A456998
-// WEth deployed to: 0x5e60843E249F2D75311Fe6583c6FB727c6b9Cd7F
-// Registry deployed to: 0xC125B4a359e03683B26f67b7cc421518E5b47F82
-// ExchangeProxy deployed to: 0x8DcCa026Ca829D479E004b61f6d94451ca90f2Fc
-// Multicall deployed to:  0xd8F763e9778CDcEaD5c7A795120ED6f8B7af537d
-// Pool address: 0xB994a8A7242e48D15f47E22e98e8BAEbE09B0548
-// TOK1 address: 0x1A30eE1295e0f10d3D9bDDc763510b3baFD1be98
-// TOK2 address: 0x6925EA17e5BcCb23CB271530cad999B992D50799
-// TOK3 address: 0x00B205bB15729dc21BBEf9b422498cFebE4CC4F0
-// Minted TOK1 for 0xAa0FE1e5500b20615e51deB3b8E41E4c90e2AcDC, balance: 10000000000000000000000
-// Minted TOK2 for 0xAa0FE1e5500b20615e51deB3b8E41E4c90e2AcDC, balance: 20000000000000000000000
-// Minted TOK3 for 0xAa0FE1e5500b20615e51deB3b8E41E4c90e2AcDC, balance: 30000000000000000000000
-// Minted TOK1 for 0xF792cBc00Ee0e961017f634A3B3CD58e17019F86, balance: 10000000000000000000000
-// Minted TOK2 for 0xF792cBc00Ee0e961017f634A3B3CD58e17019F86, balance: 20000000000000000000000
-// Minted TOK3 for 0xF792cBc00Ee0e961017f634A3B3CD58e17019F86, balance: 30000000000000000000000
-// TOK0 balance after bind:500000000000000000000
-// TOK1 balance after bind:600000000000000000000
-// TOK2 balance after bind:700000000000000000000
-// Fee is 3000000000000000
-// Public swap: true
-// Finalized: true
-
-
 async function main() {
 
     const [deployer, user] = await ethers.getSigners();

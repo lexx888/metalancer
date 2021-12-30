@@ -43,10 +43,9 @@ module.exports = {
       metis_stardust: {
         url: "https://stardust.metis.io/?owner=588",
         accounts: [
-          '0x571f3e01171a4db5886b9e3fa4d5c6a726eef2e3dc97d6cd34dd85e6335ef9c0',
-          '0x12b7dfcab9ea3a13d46357219aa393fe8d722ba72987304ec396594486a9200f',
-        ]
-      
+          'ADMIN_PRIVATE_KEY',
+          'USER_PRIVATE_KEY',
+        ]      
       }
 
       
