@@ -9,7 +9,18 @@
 **Balancer** is an automated, on-chain portfolio manager and liquidity provider. Balancer is based on an N-dimensional invariant surface which is a generalization of the constant product formula described by Vitalik Buterin.
 
 ### Enter Metalancer
-Metalancer introduces battle-proven Balancer Bronze realease to the Metis ecosystem. Our ultimate goal is to **is to build state-of-the-art portfolio investment and DEX on top of the secure, audited and well-tested Balancer's codebase**. 
+**Metalancer** introduces battle-proven Balancer Bronze realease to the Metis ecosystem. Our ultimate goal is to **is to build state-of-the-art portfolio investment protocol for Metis on top of the secure, audited and well-tested Balancer's codebase**. 
+
+### Vision and Motivation
+
+Portfolio investment is a cornerstone of modern finance both for institutional and private investors. **Metalancer** aims to enable decentralized portfolio investments in the Metis ecosystem. It uses the Balancer Protocol as its core building block. Our ultimate goal is to create an investment and yield platform that would offer portfolios with clearly defined strategies and risk profiles. 
+
+### Opportunity
+
+Balancer is a brilliant protocol that deserves wider adoption. We believe that Balancer’s unique proposition - portfolio management via multi-asset weighted pools - has not been used to its full extent. Balancer is focused on competing with traditional AMMs (e.g. UniSwap and SushiSwap), with its pools used mainly to service swap operations rather than to enable portfolio strategies.
+
+Our team sees an untapped opportunity in turning Metis into a go-to portfolio investment platform on  for private investors, asset managers and financial institutions interested in crypto assets. We believe that Metalancer can become an important step in this direction.
+
 
 ## Summary of main contributions
 
@@ -19,7 +30,7 @@ Metalancer introduces battle-proven Balancer Bronze realease to the Metis ecosys
 * We've added deployment and configuration scripts for a turn-key launch of the Balancer.
 * We've introduced a spaceship to the frontpage ☺️
 
-## Future work
+## Future work (roadmap)
 
 There working on several unique features for our version of Balancer: 
 
