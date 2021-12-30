@@ -46,13 +46,10 @@ There several things we, unfortubately, were unable to fully complete before the
 - `Staking` contract has been developed, but the UI for staking is not ready yet
 
 ## Roadmap
+For the roadmap, please consult Metalancer DAC Lightpaper uploaded with the submission.
 
+# Configuring and running on Stardust Testnet
 
-- more efficient on-chain smart order routing enabled by smaller gas costs on Metis
-
-# Configuring and running Balancer locally
-
-TBD
 
 ## Running a local testnet
 
