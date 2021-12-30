@@ -108,10 +108,11 @@ Finalized: true
 
 
 ## Configuring, building and runing the front-end
+### Configuring
 
 The front-end (off-chain) code is located in the `packages` directory.
 
-Unfortunately, Balancer's frontend code relies heavily on hardcoded contract addresses in several places. In the future, we plan to refactor the code to make it much more configurable, but for now to make it work properly, you need to replace these addresses them with the addresses provied by the deployment script (see the output above). While tedious, it is pretty straighforward task if you know where to look. The full list of files containing hardcoded facotory, pool and token addresses that has to be modified:
+Unfortunately, Balancer's frontend code relies heavily on hardcoded contract addresses in several places. In the future, we plan to refactor the code to make it much more configurable, but for now to make it work properly, you need to replace these addresses them with the addresses provied by the deployment script (see the output above). While tedious, it is a pretty straighforward task if you know where to look. The full list of files containing hardcoded facotory, pool and token addresses is below:
 
 ```
 packages/balancer-frontend/src/config/metis.json
@@ -126,9 +127,9 @@ packages/balancer-frontend/node_modules/balancer-assets/scripts/generate-registr
 packages/balancer-frontend/src/utils/provider.ts
 ```
 
+### Building
 
-
-To build front-end run:
+After you change the addresses, to build the front-end run:
 
 ```
 npm install --global lerna
@@ -137,7 +138,7 @@ lerna bootstrap
 
 ### Run
 
-To launch Balancer dapp, execute:
+To launch Metalancer dapp, execute:
 
 ```
 cd packages/balancer-frontend
