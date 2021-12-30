@@ -31,7 +31,7 @@ We have
 
 * built a monorepo for the Balancer's front-end dapp and all its packages. Orignial Balancer dapp imports most of the packages as node modules, making it hard to build on top of the Balancer's code base. Metalancer allows Metis builders' community to easily modify Balancer's front-end and Smart Order Routing source code, with instant rebuild/reload tooling enabled.
 * gathered all the necessary contracts in one a single repo (mutlicall, router, pool registry contracts). Previously, they were scattered around several different GitHub repos with no clear links between them, i.e. it was unclear what contracts are required, what versions were compatible, etc. Now everything is in complete synch and is deployment-ready.
-* migrated Balancer build from Truffle to Hardhat. Hardhat is a feature rich, fast and highly configurable Solidity development environment.
+* migrated Balancer's Solidity build from Truffle to Hardhat. Hardhat is a feature rich, fast and highly configurable Solidity development environment.
 * added deployment and configuration scripts for a turn-key launch of the Balancer on Metis, including detailed tutorial on launching Balancer on Stardust testnet and configuring its front-end. Previsously, there were only unit tests available as a source of information on how to configure Balancer's contracts. No tutorial was available for the Smart Order routing and Front-end dApp configuration.
 * revamped balance retrival mechanism that relied on a custom multicall with no source code available. Balancer uses a custom multicall contract, which is not in Balancer's Github repo. This was a major show stopper for deployment of Balancer to Metis. Our fork does not require this contract anymore.
 * added a `Staking` contract for a fixed-term (4 weeks) liquidity farming. It should incentives investors to provide liquidity for a longer period and pursue more long-term investment, while increasing Metis TVL and Metalancer's liquidity. 
@@ -40,14 +40,15 @@ We have
 
 ## Future work
 
-There several things we were unable to complete fully before the deadline of Metis Ethereum Hackathon: 
+There several things we, unfortubately, were unable to fully complete before the deadline of Metis Ethereum Hackathon: 
 
-- introduction of "loyalty" liquidity staking that makes it more profitable to
-- more user friendly user investment experience for those who are new to cryptoassets, e.g. pools that correspond to mid-to-long term portfolio investment strategies, e.g. "invest in Metaverse tokens", "invest in L2 tokens" , "invest in DeFi tokens", "invest in stable coins"
+- The new investment UI is proof-of-concept and is not fully functional at the moment
+- `Staking` contract has been developed, but the UI for staking is not ready yet
+
+## Roadmap
+
+
 - more efficient on-chain smart order routing enabled by smaller gas costs on Metis
-
-##
-roadmap
 
 # Configuring and running Balancer locally
 
