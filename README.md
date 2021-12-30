@@ -2,7 +2,6 @@
 ![image](https://user-images.githubusercontent.com/80399594/146687997-1eac15dd-ad7d-4a90-9038-4c2ace249697.png)
 ![image](https://user-images.githubusercontent.com/80399594/147783504-f4d4366e-8f24-41d5-9f42-5f5b5947d97c.png)
 
-## Metalancer = Metis + Balancer + a pinch of meta hype
 ### Introduction
 **Metis** is an easy-to-use, highly scalable, low-cost, and fully functional Ethereum Layer 2 framework.
 
@@ -10,6 +9,8 @@
 
 ### Enter Metalancer
 **Metalancer** introduces battle-proven Balancer Bronze realease to the Metis ecosystem. Our ultimate goal is to **is to build state-of-the-art portfolio investment protocol for Metis on top of the secure, audited and well-tested Balancer's codebase**. 
+
+Metalancer = __Met__is + B__alancer__ (+ a pinch of __meta__ hype)
 
 ### Vision and Motivation
 
