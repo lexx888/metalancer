@@ -52,6 +52,8 @@ For the roadmap, please consult `Metalancer DAC Lightpaper` uploaded with the su
 
 ## Compiling and deploying contracts
 
+All conracts are located in `contracts-hardhat` directory:
+
 ```shell
 cd metalancer/contracts-hardhat
 ```
