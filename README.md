@@ -1,6 +1,7 @@
 #  Metalancer: a portfolio investment protocol for Metis
 ## Metis + Balancer + a pinch of hype = Metalancer
 ![image](https://user-images.githubusercontent.com/80399594/146687997-1eac15dd-ad7d-4a90-9038-4c2ace249697.png)
+![image](https://user-images.githubusercontent.com/80399594/147783504-f4d4366e-8f24-41d5-9f42-5f5b5947d97c.png)
 
 **Metis** is an easy-to-use, highly scalable, low-cost, and fully functional Ethereum Layer 2 framework.
 
