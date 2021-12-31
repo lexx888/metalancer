@@ -1,4 +1,4 @@
-#  Metalancer: a portfolio investment and DEX protocol for Metis
+#  Metalancer: a portfolio investment and DEX for Metis
 ![image](https://user-images.githubusercontent.com/80399594/146687997-1eac15dd-ad7d-4a90-9038-4c2ace249697.png)
 ![image](https://user-images.githubusercontent.com/80399594/147783504-f4d4366e-8f24-41d5-9f42-5f5b5947d97c.png)
 
@@ -22,20 +22,20 @@ Portfolio investment is a cornerstone of modern finance both for institutional a
 
 Balancer is a brilliant protocol that deserves wider adoption. We believe that Balancer’s unique proposition - portfolio management via multi-asset weighted pools - has not been used to its full extent. Balancer is focused on competing with traditional AMMs (e.g. UniSwap and SushiSwap), with its pools used mainly to service swap operations rather than to enable portfolio strategies.
 
-Our team sees an untapped opportunity in turning Metis into a go-to portfolio investment platform on  for private investors, asset managers and financial institutions interested in crypto assets. We believe that Metalancer can become an important step in this direction.
+Our team sees an untapped opportunity to turn Metis into a go-to portfolio investment platform for private investors, asset managers, and financial institutions interested in crypto assets. We believe that Metalancer can become an essential step in this direction.
 
 
 ## Summary of main contributions
 
 We have 
 
-* built a monorepo for the Balancer's front-end dapp and all its packages. Orignial Balancer dapp imports most of the packages as node modules, making it hard to build on top of the Balancer's code base. Metalancer allows Metis builders' community to easily modify Balancer's front-end and Smart Order Routing source code, with instant rebuild/reload tooling enabled.
-* gathered all the necessary contracts in one a single repo (mutlicall, router, pool registry contracts). Previously, they were scattered around several different GitHub repos with no clear links between them, i.e. it was unclear what contracts are required, what versions were compatible, etc. Now everything is in complete synch and is deployment-ready.
-* migrated Balancer's Solidity build from Truffle to Hardhat. Hardhat is a feature rich, fast and highly configurable Solidity development environment.
-* added deployment and configuration scripts for a turn-key launch of the Balancer on Metis, including detailed tutorial on launching Balancer on Stardust testnet and configuring its front-end. Previsously, there were only unit tests available as a source of information on how to configure Balancer's contracts. No tutorial was available for the Smart Order routing and Front-end dApp configuration. 
-* revamped balance retrival mechanism that relied on a custom multicall with no source code available. Balancer uses a custom multicall contract, which is not in Balancer's Github repo. This was a major show stopper for deployment of Balancer to Metis. Our fork does not require this contract anymore.
-* added a `Staking` contract for a fixed-term (4 weeks) liquidity farming. It should incentives investors to provide liquidity for a longer period and pursue more long-term investment, while increasing Metis TVL and Metalancer's liquidity. 
-* created a mockup for a new portfolio investment UI, making it more newbie friendly and focused on strategic portfolio investment
+* built a monorepo for the Balancer's front-end dapp and all its packages. Original Balancer dapp imports most packages as node modules, making it hard to build on top of the Balancer's code base. Metalancer allows Metis builders' community to modify Balancer's front-end easily and Smart Order Routing source code, with instant, rebuild/reload tooling enabled.
+* gathered all the necessary contracts in one single repo (mutlicall, router, pool registry contracts). Previously, they were scattered around several different GitHub repos with no clear links between them, i.e. it was unclear what contracts were required, what versions were compatible, etc. Now everything is in complete synch and is deployment-ready.
+* migrated Balancer's Solidity build from Truffle to Hardhat. Hardhat is a feature-rich, fast and highly configurable Solidity development environment.
+* added deployment and configuration scripts for a turn-key launch of the Balancer on Metis, including a detailed tutorial on launching Balancer on Stardust testnet and configuring its front-end. Previously, there were only unit tests available as a source of information on how to configure Balancer's contracts. No tutorial was available for the Smart Order routing and Front-end dApp configuration. 
+* revamped balance retrieval mechanism that relied on a custom multicall with no source code available. Balancer uses a custom multicall contract, which is not in Balancer's Github repo. This was a major show stopper for deployment of Balancer to Metis. Our fork does not require this contract anymore.
+* added a `Staking` contract for a fixed-term (4 weeks) liquidity farming. It should incentivise investors to provide liquidity for a more extended period and pursue more long-term investment while increasing Metis TVL and Metalancer's liquidity. 
+* created a mockup for a new portfolio investment UI, making it more newbie-friendly and focused on strategic portfolio investment
 * tweaked swap UI, introduced a spaceship to the frontpage☺️
 
 ## Future work
@@ -68,16 +68,16 @@ metis_stardust: {
     ]      
 }
 ```
-We have created a single deployment and configuration script that will peform all necessary steps to launch Balancer's contracts. All you need is to run:
+We have created a single deployment and configuration script to perform all necessary steps to launch Balancer's contracts. All you need is to run:
 
 ```shell
 yarn install
 yarn hardhat run scripts/deploy.js --network metis_stardust
 ```
 
-This script will create one pool wit 3 test tokens (`TOK1`, `TOK2` and `TOK3`) and mint these tokens to the admin and a user, whose keys you have entered into `hardhat.config.js`.
+This script will create one pool with  3 test tokens (`TOK1`, `TOK2` and `TOK3`) and mint these tokens to the admin and a user, whose keys you have entered into `hardhat.config.js`.
 
-The output of this script will contain all contract address that have to be configured on the frontend. The actual output of the script that was used for the Demo on the testnet is provided below:
+The output of this script will contain all contract addresses that have to be configured on the frontend. The actual output of the script that was used for the Demo on the testnet is provided below:
 
 ```
 Deployer account: 0xAa0FE1e5500b20615e51deB3b8E41E4c90e2AcDC
@@ -106,14 +106,12 @@ Public swap: true
 Finalized: true
 ```
 
-
-
 ## Configuring, building and runing the front-end
 ### Configure
 
 The front-end (off-chain) code is located in the `packages` directory.
 
-Unfortunately, Balancer's frontend code relies heavily on hardcoded contract addresses in several places. In the future, we plan to refactor the code to make it much more configurable, but for now to make it work properly, you need to replace these addresses them with the addresses provied by the deployment script (see the output above). While tedious, it is a pretty straighforward task if you know where to look. The full list of files containing hardcoded factory, pool and token addresses is below:
+Unfortunately, Balancer's front-end code relies heavily on hardcoded contract addresses in several places. We plan to refactor the code to make it much more configurable in the future. But, currently, to make it work, you need to replace these addresses with the addresses provided by the deployment script (see the output above). While tedious, it is a pretty straightforward task if you know where to look. The complete list of files containing hardcoded factory, pool and token addresses is below:
 
 ```
 packages/balancer-frontend/src/config/metis.json
@@ -151,4 +149,4 @@ Then navigate to http://127.0.0.1:8080/ and connect with the Metamask browser ex
 
 You can checkout the online demo here: http://dare2defy.xyz:8080/
 
-The private keys for the accounts with test tokens will be avaiable in the description of video submission.
+The private keys for the accounts with test tokens will be available in the description of the video submission.
