@@ -149,6 +149,6 @@ Then navigate to http://127.0.0.1:8080/ and connect with the Metamask browser ex
 
 ## Online demo
 
-You can checkout our the online demo: TBA
+You can checkout the online demo here: http://dare2defy.xyz:8080/
 
 The private keys for the accounts with test tokens will be avaiable in the description of video submission.
